@@ -16,7 +16,6 @@
     --color-accent: #424242;
 }
 
-/*--------------------Estilos del body------------------*/
 
 /*---------------------Estilos del navbar------------------*/
 .imagen-logo {
@@ -42,6 +41,47 @@
 .imagen-user:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
+}
+
+/*---------------Estilos del main------------------*/
+/* Estilos para el banner con video */
+.video-banner {
+    position: relative; /* Esencial para posicionar el video y el overlay */
+    width: 90%; /* Cubre el 90% del ancho de la pantalla */
+    margin: 0 auto; /* Centra el contenedor */
+    overflow: hidden; /* Oculta cualquier parte del video que se desborde */
+    height: 60vh; /* Altura del 60% del viewport height, puedes ajustarlo */
+    display: flex; /* Para centrar el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    border-radius: 10px; /* Bordes ligeramente redondeados, opcional */
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el espacio sin distorsionarse */
+    z-index: 1; /* Coloca el video debajo del overlay y el contenido */
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.3); /* Rojo con 30% de opacidad. */
+    z-index: 2; /* Coloca el overlay encima del video */
+}
+
+.banner-content {
+    position: relative; /* Coloca el contenido encima del overlay */
+    z-index: 3;
+    color: white; /* Asegura que el texto sea legible sobre el fondo oscuro */
+    padding: 20px; /* Espaciado interno para el contenido */
 }
 
 /*---------------------Estilos del footer------------------*/
@@ -181,7 +221,34 @@
   padding-top: 1rem;
 }
 
-/* Responsive */
+/* Media Queries para Responsividad */
+/*--------Responsividad del Main--------*/
+@media (max-width: 768px) {
+    .video-banner {
+        margin-top: 85px;
+        height: 50vh; /* Ajusta la altura para pantallas más pequeñas */
+        width: 95%; /* Puedes ajustar el ancho para móviles si lo ves necesario */
+    }
+
+    .banner-content h1 {
+        font-size: 2.5rem; /* Reduce el tamaño del título en móviles */
+    }
+
+    .banner-content p {
+        font-size: 1rem; /* Reduce el tamaño del párrafo en móviles */
+    }
+}
+
+@media (max-width: 576px) {
+    .video-banner {
+        margin-top: 100px;
+        height: 40vh; /* Aún más pequeño en pantallas muy pequeñas */
+        width: 100%; /* Quizás a pantalla completa para el móvil */
+        border-radius: 0;
+    }
+}
+
+/* Responsividad-- del--footer */
 @media (max-width: 768px) {
   .footer-top {
     flex-direction: column;

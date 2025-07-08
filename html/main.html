@@ -58,8 +58,7 @@
                         <li><a class="dropdown-item" href="#">Mujer</a></li>
                         <li><a class="dropdown-item" href="#">Hombre</a></li>
                         <li><a class="dropdown-item" href="#">Zapatos</a></li>
-                        <li><a class="dropdown-item" href="#">Accesorios</a></li>  
-                        <li><a class="dropdown-item" href="#">Accesorios</a></li>                    
+                        <li><a class="dropdown-item" href="#">Accesorios</a></li>                     
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Tendencias</a></li>
                       </ul>
@@ -140,15 +139,20 @@
           </nav>
         </header>
 
-    <main class=" container mt-5">
-        <!-- BANNER PRINCIPAL -->
-        <section class="bg-light text-center py-5 mt-5">
-          <div class="container">
-            <h1 class="display-5 mb-3">¡Descubre nuestras promociones!</h1>
-            <p class="lead mb-4">Grandes descuentos en moda, hogar y tecnología.</p>
-            <a href="promociones.html" class="btn btn-danger btn-lg">Ver promociones</a>
-          </div>
-        </section>
+        <main class="container-fluid mt-5 p-0">
+            <section class="video-banner d-flex align-items-center justify-content-center text-white text-center">
+                <video autoplay muted loop class="video-background">
+                    <source src="../assets/video/promo-moda1.mp4" type="video/mp4">
+                    Tu navegador no soporta el tag de video.
+                </video>
+                <div class="video-overlay"></div>
+                <div class="container banner-content">
+                    <h1 class="display-5 mb-3 animate__animated animate__fadeInDown">¡Descubre nuestras promociones!</h1>
+                    <p class="lead mb-4 animate__animated animate__fadeInUp">Grandes descuentos en moda, hogar y tecnología.</p>
+                    <a href="promociones.html" class="btn btn-danger btn-lg animate__animated animate__zoomIn">Ver promociones</a>
+                </div>
+            </section>
+        </main>
 
         <!-- CATEGORÍAS RÁPIDAS -->
         <section class="container text-center py-5">
