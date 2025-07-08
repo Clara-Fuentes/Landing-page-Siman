@@ -84,6 +84,34 @@
     padding: 20px; /* Espaciado interno para el contenido */
 }
 
+/*--------------Estilos de categoría rápidas-----------------------*/
+/* Estilos generales para las cards*/
+.category-card {
+    border: none; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+    overflow: hidden; 
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+}
+
+.category-img {
+    height: 180px; 
+    object-fit: cover;
+    width: 100%;
+}
+
+.category-card .card-body {
+    padding: 1.5rem; 
+}
+
+.category-card .card-title {
+    font-weight: 600;
+    color: #333; 
+}
+
 /*---------------------Estilos del footer------------------*/
 .footer-siman {
   background: #f9f9f9;
@@ -226,25 +254,64 @@
 @media (max-width: 768px) {
     .video-banner {
         margin-top: 85px;
-        height: 50vh; /* Ajusta la altura para pantallas más pequeñas */
-        width: 95%; /* Puedes ajustar el ancho para móviles si lo ves necesario */
+        height: 50vh;
+        width: 95%;
     }
 
     .banner-content h1 {
-        font-size: 2.5rem; /* Reduce el tamaño del título en móviles */
+        font-size: 2.5rem; 
     }
 
     .banner-content p {
-        font-size: 1rem; /* Reduce el tamaño del párrafo en móviles */
+        font-size: 1rem; 
     }
 }
 
 @media (max-width: 576px) {
     .video-banner {
         margin-top: 100px;
-        height: 40vh; /* Aún más pequeño en pantallas muy pequeñas */
-        width: 100%; /* Quizás a pantalla completa para el móvil */
+        height: 40vh; 
+        width: 100%; 
         border-radius: 0;
+    }
+}
+/* Estilo para el botón de categorías rápidas*/
+.category-btn {
+    border-radius: 50px; 
+    padding: 0.75rem 1.5rem; 
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.category-btn:hover {
+    background-color: var(--bs-danger); 
+    color: white; 
+    transform: scale(1.05); 
+}
+
+/* Responsividad para categorías rápidas*/
+@media (max-width: 767.98px) {
+    .category-img {
+        height: 150px; 
+    }
+}
+
+@media (max-width: 575.98px) {
+    .category-img {
+        height: 120px; 
+    }
+    .category-card .card-body {
+        padding: 1rem; 
+    }
+    .category-card .card-title {
+        font-size: 1.1rem; 
+    }
+    .category-card .card-text {
+        font-size: 0.9rem; 
+    }
+    .category-btn {
+        padding: 0.6rem 1.2rem; 
+        font-size: 0.9rem; 
     }
 }
 
