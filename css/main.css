@@ -166,80 +166,201 @@
 /*---------------------Estilos de productos destacados------------------*/
 /* Sección de Productos Destacados */
 .product-card {
-    border: none; /* Quitamos el borde por defecto */
-    border-radius: 10px; /* Bordes redondeados sutiles */
-    overflow: hidden; /* Importante para que la imagen y el badge respeten el border-radius */
+    border: none;
+    border-radius: 10px; 
+    overflow: hidden; 
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .product-card:hover {
-    transform: translateY(-5px); /* Efecto de levantamiento al pasar el ratón */
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al pasar el ratón */
+    transform: translateY(-5px); 
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); 
 }
 
 .product-image-wrapper {
     position: relative; /* Para posicionar el badge de descuento */
-    overflow: hidden; /* Asegura que la imagen no se desborde al escalar */
+    overflow: hidden; 
 }
 
 .product-img {
-    height: 200px; /* Altura fija para todas las imágenes */
-    object-fit: cover; /* Asegura que las imágenes cubran el espacio sin distorsionarse */
-    width: 100%; /* Ocupa todo el ancho disponible */
-    transition: transform 0.3s ease-in-out; /* Transición para el zoom en hover */
+    height: 200px;
+    object-fit: cover; 
+    width: 100%;
+    transition: transform 0.3s ease-in-out; 
 }
 
 .product-card:hover .product-img {
-    transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+    transform: scale(1.05); 
 }
 
 .discount-badge {
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: var(--bs-danger); /* Rojo corporativo */
+    background-color: var(--bs-danger); 
     color: white;
     padding: 5px 10px;
-    border-radius: 5px; /* Bordes ligeramente redondeados */
+    border-radius: 5px; 
     font-size: 0.85rem;
     font-weight: 600;
-    z-index: 10; /* Asegura que esté por encima de la imagen */
+    z-index: 10;
 }
 
 .product-card .card-body {
-    padding: 1rem; /* Padding más compacto */
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Para empujar el botón hacia abajo */
-    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 .product-card .card-title {
     font-size: 1.25rem;
     font-weight: 600;
     color: #333;
-    margin-bottom: 0.5rem; /* Menos margen entre título y descripción */
+    margin-bottom: 0.5rem; 
 }
 
 .product-card .card-text {
     font-size: 0.9rem;
     color: #666;
-    flex-grow: 1; /* Permite que el párrafo ocupe el espacio disponible */
-    display: flex; /* Para centrar el texto verticalmente si es una sola línea */
-    align-items: center; /* Centra el texto verticalmente */
-    text-align: center; /* Asegura que el texto esté centrado */
-    margin-bottom: 0.75rem; /* Sutil margen antes del botón */
+    flex-grow: 1; 
+    display: flex; 
+    align-items: center; 
+    text-align: center; 
+    margin-bottom: 0.75rem; 
 }
 
 .product-btn {
-    border-radius: 50px; /* Botón pill como en otras secciones */
-    padding: 0.6rem 1.2rem; /* Tamaño adecuado para un botón "sm" */
+    border-radius: 50px; 
+    padding: 0.6rem 1.2rem; 
     font-weight: 500;
     transition: all 0.3s ease-in-out;
 }
 
 .product-btn:hover {
-    transform: scale(1.05); /* Efecto de zoom sutil al pasar el ratón */
+    transform: scale(1.05); 
+}
+/*---------------------Estilos del video promocional 2------------------*/
+/* Estilos para la sección de video promocional */
+.video-promo-section {
+    width: 90%; /* Ajusta el ancho para que armonice con el banner principal */
+    margin: 4rem auto; 
+    height: 450px; /* Altura predeterminada para el video.*/
+    overflow: hidden;
+    border-radius: 15px; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.video-background-promo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo el espacio sin distorsionarse */
+    z-index: 1; /* Coloca el video debajo del overlay y el contenido */
+}
+
+.video-promo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.2); /* Rojo con 20% de opacidad.*/
+    z-index: 2; /* Coloca el overlay encima del video */
+}
+
+.promo-content {
+    position: relative; /* Para asegurar que el contenido esté sobre el overlay */
+    z-index: 3;
+    color: white; 
+    /* El centrado se logra con d-flex en el padre y Bootstrap utility classes en el HTML */
+    max-width: 700px; 
+    padding: 20px; 
+}
+
+.promo-content .lead {
+    font-size: 1.25rem; 
+}
+
+.promo-btn {
+    border-radius: 50px; 
+    padding: 0.8rem 2.5rem; 
+    font-size: 1.1rem;
+    font-weight: 600; 
+    transition: all 0.3s ease-in-out;
+    background-color: var(--bs-danger); 
+    border-color: var(--bs-danger);
+}
+
+.promo-btn:hover {
+    background-color: #cc0000; 
+    border-color: #cc0000;
+    transform: scale(1.05); 
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 992px) {
+    .video-promo-section {
+        height: 400px;
+        margin: 3rem auto;
+        width: 95%;
+    }
+    .promo-content h2 {
+        font-size: 2.5rem;
+    }
+    .promo-content .lead {
+        font-size: 1.1rem;
+    }
+    .promo-btn {
+        padding: 0.7rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-promo-section {
+        height: 350px;
+        margin: 2.5rem auto;
+        border-radius: 10px; /* Menos redondeado en móviles */
+    }
+    .promo-content h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .promo-content .lead {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .promo-btn {
+        padding: 0.6rem 1.8rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .video-promo-section {
+        height: 280px; 
+        margin: 2rem auto;
+        width: 100%; 
+        border-radius: 0; 
+    }
+    .promo-content {
+        padding: 15px;
+    }
+    .promo-content h2 {
+        font-size: 1.8rem;
+    }
+    .promo-content .lead {
+        font-size: 0.9rem;
+        display: none; 
+    }
+    .promo-btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.85rem;
+    }
 }
 /*---------------------Estilos del footer------------------*/
 .footer-siman {
