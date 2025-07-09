@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /*--------------------Variables------------------*/
 :root {
     --color-primary: #f5f5f5;
@@ -15,8 +14,6 @@
     --color-quaternary: #9fcdff;
     --color-accent: #424242;
 }
-
-
 /*---------------------Estilos del navbar------------------*/
 .imagen-logo {
     width: 150px;
