@@ -112,7 +112,47 @@
     transform: translateY(-3px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+/*---------------------Beneficios de suscripción ------------------*/
+/* Sección de Beneficios */
+.benefit-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background-color: var(--bs-danger); /* Fondo rojo para el icono */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem; /* Centrar el wrapper del icono */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.benefit-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.benefit-card .card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+}
 /*---------------------Estilos del footer------------------*/
 .footer-custom {
     background-color: #f8f9fa; 
@@ -283,6 +323,22 @@
     .subscribe-hero-btn {
         padding: 0.7rem 1.5rem;
         font-size: 0.9rem;
+    }
+}
+/* Media Queries para Beneficios */
+@media (max-width: 767.98px) {
+    .benefit-icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+    .benefit-icon {
+        font-size: 1.8rem;
+    }
+    .benefit-title {
+        font-size: 1.2rem;
+    }
+    .benefit-card .card-text {
+        font-size: 0.85rem;
     }
 }
 /* Responsividad-- del--footer */
