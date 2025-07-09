@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/suscripcion.css">
+    <link rel="shortcut icon" href="../assets/img/favicon-siman.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+          <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container d-flex align-items-center">
+              <!-- Logo a la izquierda -->
+              <a href="#">
+                <img src="../assets/img/logo-siman1.png" alt="logo-siman" class="imagen-logo img-fluid">
+              </a>
+          
+              <!-- Elementos alineados a la derecha -->
+              <div class="d-flex align-items-center ms-auto gap-3">
+                <!-- Buscador -->
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                </form>
+            
+                <!-- Enlaces de navegación -->
+                <ul class="navbar-nav d-flex flex-row gap-3 mb-0">
+                  <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Suscribirme</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Sucursales</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#" title="Mi cuenta"><img src="../assets/img/user-icon.png" alt="imagen-user" class="imagen-user img-fluid"></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#" title="Mi carrito"><img src="../assets/img/carrito-icon2.png" alt="imagen-carrito" class="imagen-carrito img-fluid"></a></li>
+                </ul>
+            
+                <!-- Botón del menú desplegable -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+          
+              <!-- Contenido del menú desplegable -->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SIMAN</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="../html/main.html">Home</a></li>
+                    <!-- Dropdowns -----MODA Y ESTILO-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Moda y estilo
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Mujer</a></li>
+                        <li><a class="dropdown-item" href="#">Hombre</a></li>
+                        <li><a class="dropdown-item" href="#">Zapatos</a></li>
+                        <li><a class="dropdown-item" href="#">Accesorios</a></li>                     
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Tendencias</a></li>
+                      </ul>
+                    </li>
+                    <!---HOGAR Y DECORACIÓN-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Hogar y decoración
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Muebles</a></li>
+                        <li><a class="dropdown-item" href="#">Cocina</a></li>
+                        <li><a class="dropdown-item" href="#">Cama y baño</a></li>
+                        <li><a class="dropdown-item" href="#">Decoración</a></li>                     
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Tendencias</a></li>
+                      </ul>
+                    </li>
+                    <!---Tecnología-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tecnología
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Celulares</a></li>
+                        <li><a class="dropdown-item" href="#">Pantallas</a></li>
+                        <li><a class="dropdown-item" href="#">Computadoras</a></li>
+                        <li><a class="dropdown-item" href="#">Accersorios Tech</a></li>                     
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Tendencias</a></li>
+                      </ul>
+                    </li>
+                    <!---Niños y Bebés-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Niños y Bebés
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ropa por edades</a></li>
+                        <li><a class="dropdown-item" href="#">Juguetes</a></li>
+                        <li><a class="dropdown-item" href="#">Cuidados de bebé</a></li>                   
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Tendencias</a></li>
+                      </ul>
+                    </li>
+                    <!---Regalos e inspiración-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Regalos e inspiración
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ideas por ocasión</a></li>
+                        <li><a class="dropdown-item" href="#">Favoritos del mes</a></li>
+                        <li><a class="dropdown-item" href="#">Guía de regalos</a></li>                   
+                      </ul>
+                    </li>
+                    <!---Promociones-->
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Promociones
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Descuentos por categoría</a></li>
+                        <li><a class="dropdown-item" href="#">Ofertas flash</a></li>
+                        <li><a class="dropdown-item" href="#">Outlet digital</a></li>  
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Descuentos CREDISIMAN</a></li>                 
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+<!--------SECCIÓN DEL CONTENIDO DE SUSCRIPCIÓN------->
+<main>
+    <section class="subscribe-hero-section d-flex align-items-center justify-content-center text-center text-white">
+        <img src="../assets/img/moda-masculina.jpg" alt="Fondo elegante para suscripción" class="subscribe-hero-background-img">
+        <div class="subscribe-hero-overlay"></div>
+        <div class="container subscribe-hero-content position-relative z-index-2">
+            <h1 class="display-3 mb-3 animate__animated animate__fadeInDown">Desbloquea un Mundo de Estilo y Beneficios Exclusivos</h1>
+            <p class="lead mb-4 animate__animated animate__fadeInUp">Sé el primero en enterarte de nuestras últimas colecciones, ofertas secretas y eventos especiales.</p>
+            <a href="#subscription-form-section" class="btn btn-light btn-lg subscribe-hero-btn animate__animated animate__zoomIn">¡Quiero Unirme!</a>
+        </div>
+    </section>
+<!---SECCIÓN BENEFICIOS DE SUSCRIPCIÓN-->
+  <section class="container py-5 text-center">
+        <h2 class="display-6 mb-5">Beneficios Exclusivos de Nuestra Comunidad</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card benefit-card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="benefit-icon-wrapper mb-3">
+                            <i class="fas fa-percent benefit-icon"></i>
+                        </div>
+                        <a href="#" class=" text-decoration-none"><h5 class="card-title benefit-title">Ofertas Únicas</h5>
+                        <p class="card-text text-muted">Acceso prioritario a descuentos que no encontrarás en ningún otro lugar.</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card benefit-card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="benefit-icon-wrapper mb-3">
+                            <i class="fas fa-bell benefit-icon"></i>
+                        </div>
+                        <a href="#" class=" text-decoration-none">
+                        <h5 class="card-title benefit-title">Novedades al Instante</h5>
+                        <p class="card-text text-muted">Sé el primero en conocer los lanzamientos de colecciones y productos.</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card benefit-card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <div class="benefit-icon-wrapper mb-3">
+                            <i class="fas fa-calendar-alt benefit-icon"></i>
+                        </div>
+                        <a href="#" class=" text-decoration-none">
+                        <h5 class="card-title benefit-title">Eventos y Sorpresas</h5>
+                        <p class="card-text text-muted">Invitaciones a ventas privadas, webinars y regalos especiales.</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!---SECCIÓN DEL FORMULARIO DE SUSCRIPCIÓN-->
+<section class="container py-5" id="subscription-form-section">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="subscription-form-card shadow-lg p-4 p-md-5">
+                    <h3 class="text-center mb-4 subscription-form-title">¡Regístrate Ahora y Empieza a Disfrutar!</h3>
+                    <p class="text-center text-muted mb-4">Solo unos segundos te separan de nuestras ofertas más exclusivas.</p>
+                    <form class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control form-control-lg" id="fullName" placeholder="Ej: Ana López" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingresa tu nombre completo.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control form-control-lg" id="emailAddress" placeholder="Ej: tu.correo@ejemplo.com" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingresa un correo electrónico válido.
+                            </div>
+                        </div>
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Acepto los <a href="#" class="text-danger text-decoration-none fw-bold">Términos y Condiciones</a> y la <a href="#" class="text-danger text-decoration-none fw-bold">Política de Privacidad</a>.
+                            </label>
+                            <div class="invalid-feedback">
+                                Debes aceptar los términos y condiciones.
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-danger btn-lg subscribe-submit-btn">Suscribirme Hoy</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!------SECCIÓN DEL FOOTER------>
+  <footer class="footer-custom py-5">
+    <div class="container">
+        <div class="row align-items-center mb-5 border-bottom pb-4">
+            <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+                <h2 class="footer-logo mb-0">◆siman.com</h2>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <form class="input-group subscribe-form">
+                    <input type="email" class="form-control" placeholder="Tu correo electrónico" aria-label="Tu correo electrónico">
+                    <button class="btn btn-danger" type="submit">Suscribirme</button>
+                </form>
+            </div>
+            <div class="col-md-4 text-center text-md-end">
+                <div class="social-icons-footer">
+                    <a href="#" class="social-icon-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon-link"><i class="fab fa-tiktok"></i></a> </div>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 mb-5">
+            <div class="col">
+                <h5 class="footer-col-title mb-3">Siman Corporativo</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#" class="text-decoration-none">Quiénes Somos</a></li>
+                    <li><a href="#" class="text-decoration-none">Visión y Misión</a></li>
+                    <li><a href="#" class="text-decoration-none">Historia</a></li>
+                    <li><a href="#" class="text-decoration-none">Sucursales</a></li>
+                    <li><a href="#" class="text-decoration-none">Servicios</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h5 class="footer-col-title mb-3">Programas</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#" class="text-decoration-none">Monedero</a></li>
+                    <li><a href="#" class="text-decoration-none">Certificados de Regalo</a></li>
+                    <li><a href="#" class="text-decoration-none">Garantías</a></li>
+                    <li><a href="#" class="text-decoration-none">Siman PRO</a></li>
+                    <li><a href="#" class="text-decoration-none">Credisiman</a></li>
+                    <li><a href="#" class="text-decoration-none">Marketplace</a></li>
+                    <li><a href="#" class="text-decoration-none">Vende en Marketplace</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h5 class="footer-col-title mb-3">Servicio al Cliente</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#" class="text-decoration-none">Preguntas Frecuentes</a></li>
+                    <li><a href="#" class="text-decoration-none">Política de Devoluciones</a></li>
+                    <li><a href="#" class="text-decoration-none">Contáctenos</a></li>
+                    <li><a href="#" class="text-decoration-none">Seguridad del sitio</a></li>
+                    <li><a href="#" class="text-decoration-none">Privacidad</a></li>
+                    <li><a href="#" class="text-decoration-none">Condiciones ofertas</a></li>
+                    <li><a href="#" class="text-decoration-none">Derecho de Retracto</a></li>
+                    <li><a href="#" class="text-decoration-none">Condiciones de uso</a></li>
+                    <li><a href="#" class="text-decoration-none">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="col">
+                <h5 class="footer-col-title mb-3">Descarga la App</h5>
+                <div class="d-flex flex-column gap-2 mb-4">
+                    <a href="#" class="app-store-link">
+                        <img src="../assets/img/appstore-icon.png" alt="App Store" class="img-fluid footer-app-icon">
+                    </a>
+                    <a href="#" class="google-play-link">
+                        <img src="../assets/img/playstore-icon.png" alt="Google Play" class="img-fluid footer-app-icon">
+                    </a>
+                </div>
+
+                <h5 class="footer-col-title mb-3">Contáctanos</h5>
+                <p class="mb-2 text-muted">Teléfono:</p>
+                <a href="tel:+50322983777" class="footer-phone text-decoration-none">2298-3777</a>
+            </div>
+        </div>
+
+        <div class="row align-items-center footer-bottom-row pt-4">
+            <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                <p class="copyright-text mb-0">© 2025 Siman. Todos los derechos reservados.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <a href="#" class="footer-payment-icons"><img src="../assets/img/mpagos-icon.png" alt="Métodos de pago" class="img-fluid footer-payment-icons">  Métodos de pago</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

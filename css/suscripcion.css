@@ -1,0 +1,476 @@
+/*--------------------Reset de stilos del home------------------*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*--------------------Variables------------------*/
+:root {
+    --color-primary: #f5f5f5;
+    --color-secondary: #b21f2d;
+    --color-tertiary: #004085;
+    --color-quaternary: #9fcdff;
+    --color-accent: #424242;
+}
+/*---------------------Estilos del navbar------------------*/
+.imagen-logo {
+    width: 150px;
+    height: auto;
+}
+
+.imagen-carrito{
+    width: 1.5vw;
+    height: auto;
+}
+
+.imagen-carrito:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.imagen-user{
+    width: 1.5vw;
+    height: auto;
+}
+
+.imagen-user:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/*---------------Estilos del banner de suscripciones-----------------*/
+/* Sección Hero de Suscripciones */
+.subscribe-hero-section {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Ocupa gran parte de la pantalla */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+.subscribe-hero-background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre todo el espacio */
+    z-index: 1;
+}
+
+.subscribe-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.25); 
+    z-index: 2;
+}
+
+.subscribe-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 900px;
+}
+
+.subscribe-hero-content h1 {
+    font-weight: 450; /* Grosor del texto */
+    line-height: 1.2;
+}
+
+.subscribe-hero-content .lead {
+    font-size: 1.35rem;
+    font-weight: 300;
+}
+
+.subscribe-hero-btn {
+    border-radius: 50px;
+    padding: 1rem 2.5rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    background-color: white; 
+    color: var(--bs-danger); 
+    border: 2px solid white;
+}
+
+.subscribe-hero-btn:hover {
+    background-color: var(--bs-danger); /* Fondo rojo al pasar el ratón */
+    color: white; 
+    border-color: var(--bs-danger);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+/*---------------------Beneficios de suscripción ------------------*/
+/* Sección de Beneficios */
+.benefit-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background-color: var(--bs-danger); /* Fondo rojo para el icono */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem; /* Centrar el wrapper del icono */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    font-size: 2.2rem;
+    color: white;
+}
+
+.benefit-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.benefit-card .card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+
+}
+/*---------------------Estilos del formulario de suscripción------------------*/
+.subscription-form-card {
+    background: linear-gradient(145deg, #ffffff, #f8f9fa); /* Fondo con degradado sutil */
+    border-radius: 20px;
+    padding: 3rem;
+    border: none;
+    box-shadow: 0 5px 10px rgba(125, 125, 125, 0.073);
+    animation: fadeInScale 0.8s ease-out forwards; /* Animación de entrada */
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.subscription-form-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.subscription-form-card .form-label {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.subscription-form-card .form-control {
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+.subscription-form-card .form-control:focus {
+    border-color: var(--bs-danger);
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25); /* Sombra de enfoque con color rojo */
+}
+
+.subscribe-submit-btn {
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger);
+    transition: all 0.3s ease-in-out;
+}
+
+.subscribe-submit-btn:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-check-label a {
+    font-weight: 600;
+}
+.form-check-input:checked {
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger);
+}
+.form-check-input:focus {
+    border-color: var(--bs-danger);
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
+/*---------------------Estilos del footer------------------*/
+.footer-custom {
+    background-color: #f8f9fa; 
+    color: #e9ecef; 
+    font-size: 0.95rem; 
+}
+
+/* Logo del footer */
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--bs-danger);
+    letter-spacing: 1px;
+}
+
+/* Formulario de suscripción */
+.subscribe-form .form-control {
+    background-color: #dcdddd;
+    border: 1px;
+    color: #5b5c5c;  
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem 0 0 0.25rem; 
+}
+
+.subscribe-form .form-control::placeholder {
+    color: #686868; 
+}
+
+.subscribe-form .btn {
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger);
+    color: white;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    border-radius: 0 0.25rem 0.25rem 0; 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.subscribe-form .btn:hover {
+    background-color: #cc0000; 
+    border-color: #cc0000;
+}
+
+/* Iconos de redes sociales */
+.social-icons-footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+
+.social-icon-link {
+    color: #686868; 
+    font-size: 1.5rem; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon-link:hover {
+    color: var(--bs-danger);
+    transform: translateY(-3px); 
+}
+
+/* Títulos de las columnas del footer */
+.footer-col-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #5b5c5c; 
+    margin-bottom: 1.25rem; 
+}
+
+/* Listas de enlaces del footer */
+.footer-links li a {
+    color: #5b5c5c; 
+    transition: color 0.2s ease;
+    padding: 0.2rem 0; 
+    display: block; 
+}
+
+.footer-links li a:hover {
+    color: var(--bs-danger); 
+}
+
+/* Botones de descarga de la app */
+.footer-app-icon {
+    max-width: 130px; 
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.footer-app-icon:hover {
+    transform: translateY(-3px); 
+}
+
+/* Teléfono de contacto */
+.footer-phone {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--bs-danger); 
+    transition: color 0.2s ease;
+}
+
+.footer-phone:hover {
+    color: #cc0000; 
+}
+
+/* Sección de derechos reservados y pagos */
+.footer-bottom-row {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+}
+
+.copyright-text {
+    font-size: 0.85rem;
+    color: #686868;  
+}
+
+.footer-payment-icons {
+    max-width: 200px; 
+    color: #373636; 
+    height: auto;
+    text-decoration: none;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-payment-icons:hover {
+    color :var(--bs-danger);
+}
+/* Media Queries para Responsividad */
+/* Responsividad para Hero Section */
+@media (max-width: 991.98px) {
+    .subscribe-hero-section {
+        height: 70vh;
+    }
+    .subscribe-hero-content h1 {
+        font-size: 2.8rem;
+    }
+    .subscribe-hero-content .lead {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .subscribe-hero-section {
+        height: 60vh;
+    }
+    .subscribe-hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .subscribe-hero-content .lead {
+        font-size: 1rem;
+    }
+    .subscribe-hero-btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .subscribe-hero-section {
+        height: 50vh;
+    }
+    .subscribe-hero-content h1 {
+        font-size: 1.8rem;
+    }
+    .subscribe-hero-content .lead {
+        font-size: 0.9rem;
+    }
+    .subscribe-hero-btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+/* Responsividad para Beneficios */
+@media (max-width: 767.98px) {
+    .benefit-icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+    .benefit-icon {
+        font-size: 1.8rem;
+    }
+    .benefit-title {
+        font-size: 1.2rem;
+    }
+    .benefit-card .card-text {
+        font-size: 0.85rem;
+    }
+}
+/*Responsividad para Formulario */
+@media (max-width: 767.98px) {
+    .subscription-form-card {
+        padding: 2rem;
+    }
+    .subscription-form-title {
+        font-size: 1.75rem;
+    }
+    .subscribe-submit-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .subscription-form-card {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+    .subscription-form-title {
+        font-size: 1.5rem;
+    }
+    .subscription-form-card .form-control {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    .subscribe-submit-btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    .form-check-label {
+        font-size: 0.85rem;
+    }
+}
+/* Responsividad-- del--footer */
+@media (max-width: 767.98px) {
+    .footer-custom {
+        text-align: center;
+    }
+    .footer-col-title {
+        margin-top: 1.5rem; /* Espacio extra entre columnas apiladas */
+    }
+    .footer-col:not(:last-child) {
+        margin-bottom: 1.5rem; 
+    }
+    .social-icons-footer {
+        justify-content: center; 
+        margin-top: 1rem;
+    }
+    .subscribe-form {
+        max-width: 300px; 
+        margin: 0 auto; /* Centra el formulario */
+    }
+    .footer-bottom-row {
+        flex-direction: column; 
+    }
+    .footer-bottom-row .col-md-6 {
+        text-align: center !important;
+    }
+    .footer-payment-icons {
+        margin-top: 1rem;
+    }
+}
