@@ -139,6 +139,191 @@
             </div>
           </nav>
         </header>
+<!--------SECCIÓN DE PROMOCIONES------->
+    <main>
+        <section class="promo-hero-section d-flex align-items-center justify-content-center text-center text-white">
+            <video autoplay muted loop playsinline class="promo-hero-video-background">
+                <source src="../assets/video/promo-tech.mp4" type="video/mp4"> Tu navegador no soporta el tag de video.
+            </video>
+            <div class="promo-hero-overlay"></div>
+            <div class="container promo-hero-content position-relative z-index-2">
+                <h1 class="display-4 mb-3 animate__animated animate__fadeInDown">¡Grandes Descuentos Te Esperan!</h1>
+                <p class="lead mb-4 animate__animated animate__fadeInUp">Explora nuestras irresistibles ofertas en todas las categorías.</p>
+                <div id="promoCarouselContent" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#promoCarouselContent" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#promoCarouselContent" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#promoCarouselContent" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="../assets/img/moda-hombre.jpg" class="carousel-icon-img me-3" alt="Icono Moda">
+                                <p class="carousel-text lead mb-0">Hasta <strong>50% OFF</strong> en Moda</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="../assets/img/hogar-accesorios.jpg" class="carousel-icon-img me-3" alt="Icono Hogar">
+                                <p class="carousel-text lead mb-0">Rebajas Exclusivas en Hogar</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <img src="../assets/img/tecnologia-img.jpg" class="carousel-icon-img me-3" alt="Icono Tech">
+                                <p class="carousel-text lead mb-0">Descuentos Especiales en Tecnología</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#promoCarouselContent" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#promoCarouselContent" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <a href="#promo-categorias" class="btn btn-danger btn-lg mt-4 animate__animated animate__zoomIn">Ver Todas las Ofertas</a>
+            </div>
+        </section>
+
+        <section class="container py-5" id="promo-categorias">
+            <h2 class="text-center display-6 mb-5">Encuentra Tu Próxima Ganga</h2>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-pill px-3 shadow-sm promo-filters-nav">
+                        <div class="container-fluid">
+                            <span class="navbar-brand d-lg-none">Filtrar por:</span>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavPromo" aria-controls="navbarNavPromo" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNavPromo">
+                                <ul class="navbar-nav promo-filter-menu">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Todo (150)</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCategories" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Categorías
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCategories">
+                                            <li><a class="dropdown-item" href="#">Moda (50)</a></li>
+                                            <li><a class="dropdown-item" href="#">Hogar (30)</a></li>
+                                            <li><a class="dropdown-item" href="#">Tecnología (20)</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item" href="#">Ver Todas</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDiscount" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            % Descuento
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownDiscount">
+                                            <li><a class="dropdown-item" href="#">10-25%</a></li>
+                                            <li><a class="dropdown-item" href="#">25-50%</a></li>
+                                            <li><a class="dropdown-item" href="#">Más de 50%</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Nuevas Ofertas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Más Vendidos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 mb-5">
+                <div class="col">
+                    <div class="card product-card h-100 shadow-sm">
+                        <div class="product-image-wrapper">
+                            <img src="https://via.placeholder.com/400x300/F08080/FFFFFF?text=Promocion+1" class="card-img-top product-img" alt="Producto en Promoción 1">
+                            <span class="discount-badge">-30% OFF</span>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <h5 class="card-title mb-2">Jeans Ajustados</h5>
+                            <p class="card-text text-muted mb-3">Perfectos para cualquier ocasión.</p>
+                            <a href="#" class="btn btn-danger btn-sm product-btn">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card product-card h-100 shadow-sm">
+                        <div class="product-image-wrapper">
+                            <img src="https://via.placeholder.com/400x300/98FB98/FFFFFF?text=Promocion+2" class="card-img-top product-img" alt="Producto en Promoción 2">
+                            <span class="discount-badge">-40% OFF</span>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <h5 class="card-title mb-2">Cafetera Inteligente</h5>
+                            <p class="card-text text-muted mb-3">Despierta con el mejor aroma.</p>
+                            <a href="#" class="btn btn-danger btn-sm product-btn">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card product-card h-100 shadow-sm">
+                        <div class="product-image-wrapper">
+                            <img src="https://via.placeholder.com/400x300/87CEEB/FFFFFF?text=Promocion+3" class="card-img-top product-img" alt="Producto en Promoción 3">
+                            <span class="discount-badge">-20% OFF</span>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <h5 class="card-title mb-2">Smartwatch Fitness</h5>
+                            <p class="card-text text-muted mb-3">Tu compañero para una vida activa.</p>
+                            <a href="#" class="btn btn-danger btn-sm product-btn">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card product-card h-100 shadow-sm">
+                        <div class="product-image-wrapper">
+                            <img src="https://via.placeholder.com/400x300/FFDAB9/FFFFFF?text=Promocion+4" class="card-img-top product-img" alt="Producto en Promoción 4">
+                            <span class="discount-badge">-50% OFF</span>
+                        </div>
+                        <div class="card-body text-center d-flex flex-column justify-content-between">
+                            <h5 class="card-title mb-2">Set de Sartenes Antiadherentes</h5>
+                            <p class="card-text text-muted mb-3">Cocina tus platos favoritos fácilmente.</p>
+                            <a href="#" class="btn btn-danger btn-sm product-btn">Ver Producto</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            <nav aria-label="Navegación de promociones">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                    </li>
+                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Siguiente</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="promo-newsletter-section text-white text-center py-5">
+            <div class="container">
+                <h2 class="display-6 mb-4">¡No te pierdas ninguna oferta!</h2>
+                <p class="lead mb-4">Suscríbete a nuestro boletín y recibe las mejores promociones directamente en tu email.</p>
+                <form class="subscribe-form-lg mx-auto" style="max-width: 500px;">
+                    <div class="input-group">
+                        <input type="email" class="form-control form-control-lg" placeholder="Tu correo electrónico" aria-label="Tu correo electrónico para suscribirte">
+                        <button class="btn btn-light btn-lg" type="submit">Suscribirme Ahora</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 <!--------SECCIÓN DEL FOOTER------->
   <footer class="footer-custom py-5">
     <div class="container">
