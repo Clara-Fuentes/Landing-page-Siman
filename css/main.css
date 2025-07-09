@@ -301,204 +301,133 @@
     transform: scale(1.05); 
 }
 
-/* Media Queries para Responsividad */
-@media (max-width: 992px) {
-    .video-promo-section {
-        height: 400px;
-        margin: 3rem auto;
-        width: 95%;
-    }
-    .promo-content h2 {
-        font-size: 2.5rem;
-    }
-    .promo-content .lead {
-        font-size: 1.1rem;
-    }
-    .promo-btn {
-        padding: 0.7rem 2rem;
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .video-promo-section {
-        height: 350px;
-        margin: 2.5rem auto;
-        border-radius: 10px; /* Menos redondeado en móviles */
-    }
-    .promo-content h2 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
-    .promo-content .lead {
-        font-size: 1rem;
-        margin-bottom: 1rem;
-    }
-    .promo-btn {
-        padding: 0.6rem 1.8rem;
-        font-size: 0.95rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .video-promo-section {
-        height: 280px; 
-        margin: 2rem auto;
-        width: 100%; 
-        border-radius: 0; 
-    }
-    .promo-content {
-        padding: 15px;
-    }
-    .promo-content h2 {
-        font-size: 1.8rem;
-    }
-    .promo-content .lead {
-        font-size: 0.9rem;
-        display: none; 
-    }
-    .promo-btn {
-        padding: 0.5rem 1.5rem;
-        font-size: 0.85rem;
-    }
-}
 /*---------------------Estilos del footer------------------*/
-.footer-siman {
-  background: #f9f9f9;
-  color: #333;
-  font-family: 'Segoe UI', sans-serif;
-  padding: 3rem 1.5rem;
+.footer-custom {
+    background-color: #f8f9fa; 
+    color: #e9ecef; 
+    font-size: 0.95rem; 
 }
 
-.footer-container {
-  max-width: 1300px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+/* Logo del footer */
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--bs-danger);
+    letter-spacing: 1px;
 }
 
-/* Top: logo + suscripción */
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+/* Formulario de suscripción */
+.subscribe-form .form-control {
+    background-color: #dcdddd;
+    border: 1px;
+    color: #5b5c5c;  
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem 0 0 0.25rem; 
 }
 
-.footer-logo h2 {
-  font-size: 1.6rem;
-  color: #a3080f;
+.subscribe-form .form-control::placeholder {
+    color: #686868; 
 }
 
-.subscribe-form {
-  display: flex;
-  gap: 0.5rem;
+.subscribe-form .btn {
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger);
+    color: white;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    border-radius: 0 0.25rem 0.25rem 0; 
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.subscribe-form input {
-  padding: 0.6rem 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 0.95rem;
-  min-width: 250px;
+.subscribe-form .btn:hover {
+    background-color: #cc0000; 
+    border-color: #cc0000;
 }
 
-.subscribe-form button {
-  background: #a3080f;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.3s;
+/* Iconos de redes sociales */
+.social-icons-footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
 }
 
-.subscribe-form button:hover {
-  background: #80060b;
+.social-icon-link {
+    color: #686868; 
+    font-size: 1.5rem; 
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Columns */
-.footer-columns {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+.social-icon-link:hover {
+    color: var(--bs-danger);
+    transform: translateY(-3px); 
 }
 
-.footer-col h4 {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: 600;
+/* Títulos de las columnas del footer */
+.footer-col-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #5b5c5c; 
+    margin-bottom: 1.25rem; 
 }
 
-.footer-col ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Listas de enlaces del footer */
+.footer-links li a {
+    color: #5b5c5c; 
+    transition: color 0.2s ease;
+    padding: 0.2rem 0; 
+    display: block; 
 }
 
-.footer-col li {
-  margin-bottom: 0.6rem;
+.footer-links li a:hover {
+    color: var(--bs-danger); 
 }
 
-.footer-col a {
-  text-decoration: none;
-  color: #555;
-  font-size: 0.9rem;
-  transition: color 0.3s;
+/* Botones de descarga de la app */
+.footer-app-icon {
+    max-width: 130px; 
+    height: auto;
+    transition: transform 0.2s ease;
 }
 
-.footer-col a:hover {
-  color: var(--color-secondary)
+.footer-app-icon:hover {
+    transform: translateY(-3px); 
 }
 
-/* Iconos, apps y redes */
-.footer-icons img {
-  height: 35px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+/* Teléfono de contacto */
+.footer-phone {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--bs-danger); 
+    transition: color 0.2s ease;
 }
 
-.social-icons {
-  display: flex;
-  gap: 12px;
-  margin-top: 10px;
+.footer-phone:hover {
+    color: #cc0000; 
 }
 
-.social-icons a {
-  background: #a3080f;
-  color: white;
-  width: 34px;
-  height: 34px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 14px;
-  transition: background 0.3s;
+/* Sección de derechos reservados y pagos */
+.footer-bottom-row {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    padding-top: 1.5rem;
+    margin-top: 1rem;
 }
 
-.social-icons a:hover {
-  background: #80060b;
+.copyright-text {
+    font-size: 0.85rem;
+    color: #686868;  
 }
 
-.phone {
-  font-weight: bold;
-  margin: 0.5rem 0;
+.footer-payment-icons {
+    max-width: 200px; 
+    color: #373636; 
+    height: auto;
+    text-decoration: none;
+    transition: filter 0.3s ease, opacity 0.3s ease;
 }
 
-/* Bottom */
-.footer-bottom {
-  text-align: center;
-  font-size: 0.85rem;
-  color: #777;
-  border-top: 1px solid #ddd;
-  padding-top: 1rem;
+.footer-payment-icons:hover {
+    color :var(--bs-danger);
 }
-
 /* Media Queries para Responsividad */
 /*--------Responsividad del Main--------*/
 @media (max-width: 768px) {
@@ -642,32 +571,93 @@
         font-size: 0.75rem;
     }
 }
-/* Responsividad-- del--footer */
+/*Responsividad del video promocional 2*/
+@media (max-width: 992px) {
+    .video-promo-section {
+        height: 400px;
+        margin: 3rem auto;
+        width: 95%;
+    }
+    .promo-content h2 {
+        font-size: 2.5rem;
+    }
+    .promo-content .lead {
+        font-size: 1.1rem;
+    }
+    .promo-btn {
+        padding: 0.7rem 2rem;
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
-  .footer-top {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    .video-promo-section {
+        height: 350px;
+        margin: 2.5rem auto;
+        border-radius: 10px; /* Menos redondeado en móviles */
+    }
+    .promo-content h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .promo-content .lead {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .promo-btn {
+        padding: 0.6rem 1.8rem;
+        font-size: 0.95rem;
+    }
+}
 
-  .subscribe-form {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .subscribe-form input,
-  .subscribe-form button {
-    width: 100%;
-  }
-
-  .footer-columns {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-icons {
-    align-items: center;
-  }
-
-  .social-icons {
-    justify-content: flex-start;
-  }
+@media (max-width: 576px) {
+    .video-promo-section {
+        height: 280px; 
+        margin: 2rem auto;
+        width: 100%; 
+        border-radius: 0; 
+    }
+    .promo-content {
+        padding: 15px;
+    }
+    .promo-content h2 {
+        font-size: 1.8rem;
+    }
+    .promo-content .lead {
+        font-size: 0.9rem;
+        display: none; 
+    }
+    .promo-btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.85rem;
+    }
+}
+/* Responsividad-- del--footer */
+@media (max-width: 767.98px) {
+    .footer-custom {
+        text-align: center;
+    }
+    .footer-col-title {
+        margin-top: 1.5rem; /* Espacio extra entre columnas apiladas */
+    }
+    .footer-col:not(:last-child) {
+        margin-bottom: 1.5rem; 
+    }
+    .social-icons-footer {
+        justify-content: center; 
+        margin-top: 1rem;
+    }
+    .subscribe-form {
+        max-width: 300px; 
+        margin: 0 auto; /* Centra el formulario */
+    }
+    .footer-bottom-row {
+        flex-direction: column; 
+    }
+    .footer-bottom-row .col-md-6 {
+        text-align: center !important;
+    }
+    .footer-payment-icons {
+        margin-top: 1rem;
+    }
 }
