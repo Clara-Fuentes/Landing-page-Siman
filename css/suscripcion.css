@@ -153,6 +153,79 @@
     line-height: 1.6;
 
 }
+/*---------------------Estilos del formulario de suscripción------------------*/
+.subscription-form-card {
+    background: linear-gradient(145deg, #ffffff, #f8f9fa); /* Fondo con degradado sutil */
+    border-radius: 20px;
+    padding: 3rem;
+    border: none;
+    box-shadow: 0 5px 10px rgba(125, 125, 125, 0.073);
+    animation: fadeInScale 0.8s ease-out forwards; /* Animación de entrada */
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.subscription-form-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.subscription-form-card .form-label {
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.subscription-form-card .form-control {
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+.subscription-form-card .form-control:focus {
+    border-color: var(--bs-danger);
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25); /* Sombra de enfoque con color rojo */
+}
+
+.subscribe-submit-btn {
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger);
+    transition: all 0.3s ease-in-out;
+}
+
+.subscribe-submit-btn:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-check-label a {
+    font-weight: 600;
+}
+.form-check-input:checked {
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger);
+}
+.form-check-input:focus {
+    border-color: var(--bs-danger);
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
 /*---------------------Estilos del footer------------------*/
 .footer-custom {
     background-color: #f8f9fa; 
@@ -325,7 +398,7 @@
         font-size: 0.9rem;
     }
 }
-/* Media Queries para Beneficios */
+/* Responsividad para Beneficios */
 @media (max-width: 767.98px) {
     .benefit-icon-wrapper {
         width: 60px;
@@ -338,6 +411,40 @@
         font-size: 1.2rem;
     }
     .benefit-card .card-text {
+        font-size: 0.85rem;
+    }
+}
+/*Responsividad para Formulario */
+@media (max-width: 767.98px) {
+    .subscription-form-card {
+        padding: 2rem;
+    }
+    .subscription-form-title {
+        font-size: 1.75rem;
+    }
+    .subscribe-submit-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .subscription-form-card {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+    .subscription-form-title {
+        font-size: 1.5rem;
+    }
+    .subscription-form-card .form-control {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+    }
+    .subscribe-submit-btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    .form-check-label {
         font-size: 0.85rem;
     }
 }
