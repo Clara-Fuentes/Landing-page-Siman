@@ -125,9 +125,9 @@
 
 /* Estilos para los Indicadores (puntos) del Carrusel */
 #promoCarouselContent .carousel-indicators [data-bs-target] {
-    background-color: rgba(255, 255, 255, 0.8); /* Blanco semitransparente */
-    width: 7px;
-    height: 7px;
+    background-color: rgba(255, 255, 255, 0.9); /* Blanco semitransparente */
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
 }
 
@@ -274,9 +274,7 @@
     border-color: #dee2e6;
 }
 
-
 /*  CTA de Suscripción a Ofertas Exclusivas */
-
 .promo-newsletter-section {
     background-color: var(--bs-danger); /* Fondo rojo corporativo */
     padding: 80px 0;
